@@ -5,19 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iKynex Software - İletişim & Profil</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
-        .container { background-color: #1e1e1e; padding: 30px; border-radius: 12px; max-width: 500px; width: 100%; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
-        h1 { color: #bb86fc; font-size: 24px; margin-bottom: 10px; }
-        p { color: #a0a0a0; font-size: 15px; line-height: 1.6; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; color: #e0e0e0; font-size: 14px; }
-        input, textarea { width: 100%; padding: 10px; border: 1px border #333; background-color: #2d2d2d; color: #ffffff; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
-        input:focus, textarea:focus { border-color: #bb86fc; outline: none; }
-        textarea { height: 120px; resize: none; }
-        button { background-color: #bb86fc; color: #121212; border: none; padding: 12px; width: 100%; font-weight: bold; border-radius: 6px; cursor: pointer; font-size: 16px; transition: 0.3s; }
-        button:hover { background-color: #9b66dd; }
-        .footer { margin-top: 25px; text-align: center; font-size: 13px; color: #666; }
-        .footer a { color: #bb86fc; text-decoration: none; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #121212; 
+            color: #DBD94B; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .container { 
+            background-color: #1e1e1e; 
+            padding: 30px; 
+            border-radius: 12px; 
+            max-width: 500px; 
+            width: 100%; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5); 
+            border: 1px solid #DBD94B;
+        }
+        h1 { 
+            color: #DBD94B; 
+            font-size: 24px; 
+            margin-bottom: 10px; 
+        }
+        p { 
+            color: #DBD94B; 
+            font-size: 15px; 
+            line-height: 1.6; 
+        }
+        .form-group { 
+            margin-bottom: 15px; 
+        }
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+            color: #DBD94B; 
+            font-size: 14px; 
+        }
+        input, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #DBD94B; 
+            background-color: #2d2d2d; 
+            color: #DBD94B; 
+            border-radius: 6px; 
+            box-sizing: border-box; 
+            font-size: 14px; 
+        }
+        input::placeholder, textarea::placeholder {
+            color: rgba(219, 217, 75, 0.5);
+        }
+        input:focus, textarea:focus { 
+            border-color: #ffffff; 
+            outline: none; 
+        }
+        textarea { 
+            height: 120px; 
+            resize: none; 
+        }
+        button { 
+            background-color: #DBD94B; 
+            color: #121212; 
+            border: none; 
+            padding: 12px; 
+            width: 100%; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            transition: 0.3s; 
+        }
+        button:hover { 
+            background-color: #c4c23f; 
+        }
+        .footer { 
+            margin-top: 25px; 
+            text-align: center; 
+            font-size: 13px; 
+            color: #DBD94B; 
+        }
+        .footer a { 
+            color: #DBD94B; 
+            text-decoration: underline; 
+        }
+        hr {
+            border: 0; 
+            border-top: 1px solid #DBD94B; 
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -26,8 +103,9 @@
     <h1>iKynex Software</h1>
     <p>Merhaba, ben iKynex ekosisteminin arkasındaki bağımsız yazılım geliştiriciyim. Kullanıcıların günlük hayatını kolaylaştıran, işlevsel, modern ve performans odaklı mobil uygulamalar üretiyorum.</p>
     
-    <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
+    <hr>
 
+    <!-- İLETİŞİM FORMU -->
     <form action="https://formspree.io/f/xppqejny" method="POST">
         <div class="form-group">
             <label for="email">E-posta Adresiniz:</label>
@@ -41,7 +119,7 @@
     </form>
 
     <div class="footer">
-        © 2026 iKynex Software | <a href="#">Gizlilik Politikası</a>
+        © 2026 iKynex Software | <a href="privacy.html">Gizlilik Politikası</a>
     </div>
 </div>
 
